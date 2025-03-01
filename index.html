@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#eef3ff] pt-[25px] pb-[60px]">
+    <header class="s header-s">
+        <div class="header-a a">
+            <div class="flex justify-between items-center bg-white p-[24px] rounded-[16px]">
+                <div class="flex items-center gap-x-[10px]">
+                  <img src="asset/logo.png" alt="Logo">
+                  <span class="text-4xl text-[#00303C]">Dev<strong class="f7">Board</strong></span>
+                </div>
+                <div class="flex items-center gap-x-[38px]">
+                    <div class="flex items-center gap-x-[10px] px-[15px] py-[10px] bg-[#eef3ff] rounded-[32px]">
+                        <img src="asset/checkbox.png" alt="checkbox">
+                        <span id="task-done" class="f7 text-[23px]">23</span>
+                    </div>
+                    <a id="change-color" href="javascript:void(0);" class="bg-[#eef3ff] p-[12px] rounded-[50%]">
+                        <img src="asset/theme-btn.png" alt="Color Button">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-s s pt-[20px]">
+        <div class="main-a a flex justify-between">
+            <div class="c1 w-[1146px] flex flex-col gap-y-[30px] rounded-[16px] bg-white p-[25px]">
+                <div class="flex gap-x-[24px]">
+
+                    <div class="bg-[#eef3ff] items-center rounded-[12px] p-[23px] gap-x-[20px] flex">
+                        <div class="bg-white rounded-[50%] p-[18px]">
+                            <img src="asset/checkbox.png" alt="checkbox">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[#]">Task Assigned</span>
+                            <span id="task-count" class="f7 text-[32px]">06</span>
+                        </div>
+                    </div>
+
+                    <a href="blog.html" class="rc1 bg-[#eef3ff] grow-[30] items-center rounded-[12px] p-[23px] gap-x-[20px] flex">
+                        <img src="asset/board.png" alt="checkbox">
+                        <span class="text-[24px] w-[280px]" style="color: white !important;">Discover Something New Today!</span>
+                    </a>
+
+                    <div class="bg-[#eef3ff] items-center rounded-[12px] p-[23px] gap-x-[20px] flex">
+                        <div class="bg-white rounded-[50%] p-[18px]">
+                            <img src="asset/calender.png" alt="checkbox">
+                        </div>
+                        <div class="flex flex-col">
+                            <span id="weekday" class="text-[22px]"></span>
+                            <span id="month-date-year" class="f7 text-[22px]"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+
+                <div class="flex flex-wrap justify-between gap-y-[23px]">
+
+
+                    <div class="rounded-[16px] flex items-start flex-col p-[24px] gap-y-[16px] bg-[#eef3ff]">
+                        <div class="px-[16px] py-[8px] bg-white rounded-[8px]">
+                            <span>ShopEase</span>
+                        </div>
+                        <h3 id="h1" class="text-2xl f5">Fix Mobile Button Issue</h3>
+                        <div class="bg-[white] p-[16px] rounded-[8px]">
+                            <p class="w-[270px]">Debug using Chrome DevTools, check for other tools</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                        <div class="flex justify-between w-full">
+                            <div class="flex flex-col">
+                                <span>Deadline</span>
+                                <strong class="f6">21 March 2025</strong>
+                            </div>
+                            <button id="b1" class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px]" style="color: white !important">Completed</button>
+                        </div>
+                    </div>
+
+
+                    <div class="rounded-[16px] flex items-start flex-col p-[24px] gap-y-[16px] bg-[#eef3ff]">
+                        <div class="px-[16px] py-[8px] bg-white rounded-[8px]">
+                            <span>CloudSync</span>
+                        </div>
+                        <h3 id="h2" class="text-2xl f5">Add Dark Mode</h3>
+                        <div class="bg-[white] p-[16px] rounded-[8px]">
+                            <p class="w-[270px]">Debug using Chrome DevTools, check for other tools</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                        <div class="flex justify-between w-full">
+                            <div class="flex flex-col">
+                                <span>Deadline</span>
+                                <strong class="f6">23 March 2025</strong>
+                            </div>
+                            <button id="b2" class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px]" style="color: white !important">Completed</button>
+                        </div>
+                    </div>
+
+
+                    <div class="rounded-[16px] flex items-start flex-col p-[24px] gap-y-[16px] bg-[#eef3ff]">
+                        <div class="px-[16px] py-[8px] bg-white rounded-[8px]">
+                            <span>SwiftPay</span>
+                        </div>
+                        <h3 id="h3" class="text-2xl f5">Optimize  Home page </h3>
+                        <div class="bg-[white] p-[16px] rounded-[8px]">
+                            <p class="w-[270px]">Debug using Chrome DevTools, check for other tools</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                        <div class="flex justify-between w-full">
+                            <div class="flex flex-col">
+                                <span>Deadline</span>
+                                <strong class="f6">24 March 2025</strong>
+                            </div>
+                            <button id="b3" class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px]" style="color: white !important">Completed</button>
+                        </div>
+                    </div>
+
+
+                    <div class="rounded-[16px] flex items-start flex-col p-[24px] gap-y-[16px] bg-[#eef3ff]">
+                        <div class="px-[16px] py-[8px] bg-white rounded-[8px]">
+                            <span>Meta</span>
+                        </div>
+                        <h3 id="h4" class="text-2xl f5">Add new emoji 🤲</h3>
+                        <div class="bg-[white] p-[16px] rounded-[8px]">
+                            <p class="w-[270px]">Debug using Chrome DevTools, check for other tools</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                        <div class="flex justify-between w-full">
+                            <div class="flex flex-col">
+                                <span>Deadline</span>
+                                <strong class="f6">26 March 2025</strong>
+                            </div>
+                            <button id="b4" class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px]" style="color: white !important">Completed</button>
+                        </div>
+                    </div>
+
+
+                    <div class="rounded-[16px] flex items-start flex-col p-[24px] gap-y-[16px] bg-[#eef3ff]">
+                        <div class="px-[16px] py-[8px] bg-white rounded-[8px]">
+                            <span>Google LLC</span>
+                        </div>
+                        <h3 id="h5" class="text-2xl f5">Integrate OpenAI API </h3>
+                        <div class="bg-[white] p-[16px] rounded-[8px]">
+                            <p class="w-[270px]">Debug using Chrome DevTools, check for other tools</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                        <div class="flex justify-between w-full">
+                            <div class="flex flex-col">
+                                <span>Deadline</span>
+                                <strong class="f6">29 March 2025</strong>
+                            </div>
+                            <button id="b5" class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px]" style="color: white !important">Completed</button>
+                        </div>
+                    </div>
+
+
+                    <div class="rounded-[16px] flex items-start flex-col p-[24px] gap-y-[16px] bg-[#eef3ff]">
+                        <div class="px-[16px] py-[8px] bg-white rounded-[8px]">
+                            <span>Glassdoar</span>
+                        </div>
+                        <h3 id="h6" class="text-2xl f5">Improve Job searching </h3>
+                        <div class="bg-[white] p-[16px] rounded-[8px]">
+                            <p class="w-[270px]">Debug using Chrome DevTools, check for other tools</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                        <div class="flex justify-between w-full">
+                            <div class="flex flex-col">
+                                <span>Deadline</span>
+                                <strong class="f6">22 March 2025</strong>
+                            </div>
+                            <button id="b6" class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px]" style="color: white !important">Completed</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="c2 flex flex-col items-center gap-y-[15px] w-[366px] rounded-[16px] bg-white p-[25px]">
+
+                <div class="flex items-center gap-x-[10px]">
+                    <img src="asset/activity.png" alt="activity">
+                    <span class="text-[20px]">Activity Log</span>
+                </div>
+                <button id="clear-history" class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px]" style="color: white !important">Clear History</button>
+
+                <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+
+                <div id="history" class=" flex flex-col gap-y-[10px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

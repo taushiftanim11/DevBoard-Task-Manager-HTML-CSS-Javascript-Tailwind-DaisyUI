@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#eef3ff] pt-[25px] pb-[60px]">
+    <header class="s header-s">
+        <div class="header-a a">
+            <div class="flex justify-between items-center bg-white p-[24px] rounded-[16px]">
+                <div class="flex items-center gap-x-[10px]">
+                  <img src="asset/logo.png" alt="Logo">
+                  <span class="text-4xl text-[#00303C]">Dev<strong class="f7">Board</strong></span>
+                </div>
+                <a href="index.html" class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px]" style="color: white !important">Back To Desk</a>
+              </div>
+        </div>
+    </header>
+    <section class="main-s s pt-[20px]">
+        <div class="main-a a">
+            <h1 class="text-center f8 text-[24px] mb-[20px]">Blogs</h1>
+            <div class="flex flex-col gap-y-[20px] rounded-[16px]">
+
+
+                <div class="flex flex-col items-start gap-y-[15px] bg-white p-[24px] rounded-[16px]">
+                    <h2 class="f6 text-[20px]">Question-1: What are the different ways to select an element in the DOM?</h2>
+                    <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                    <p>
+                        getElementById(id), getElementsByClassName(className), getElementsByTagName(tagName), querySelector(selector), querySelectorAll(selector)
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start gap-y-[15px] bg-white p-[24px] rounded-[16px]">
+                    <h2 class="f6 text-[20px]">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+                    <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                    <p>
+                        innerHTML: Gets the HTML content inside an element with the HTML tags itself.
+                        <br>
+                        innerText: Gets just the text content inside an element.
+                        <br>
+                        textContent: Gets the text content inside an element, including hidden elements.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start gap-y-[15px] bg-white p-[24px] rounded-[16px]">
+                    <h2 class="f6 text-[20px]">Question-3: What is event delegation in the DOM?</h2>
+                    <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                    <p>
+                        Event delegation is a process where a single event listener is added to a parent element to manage events for multiple child elements.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start gap-y-[15px] bg-white p-[24px] rounded-[16px]">
+                    <h2 class="f6 text-[20px]">Question-4: What is event bubbling in the DOM?</h2>
+                    <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                    <p>
+                        Event bubbling is a process where an event triggered on a child element propagates (bubbles up) through its parent elements in the DOM hierarchy until it reaches the root element.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start gap-y-[15px] bg-white p-[24px] rounded-[16px]">
+                    <h2 class="f6 text-[20px]">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                    <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+                    <p>
+                        Create: document.createElement('tagName') creates a new element.
+                        <br>
+                        Add: Use appendChild(newElement) to add a newly created element to a parent element.
+                        <br>
+                        Remove: Use removeChild(existingElement) to remove an element from its parent.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="w-full h-[1px] bg-transparent border-dashed border-[#c9d0ff] border-[1px]"></div>
+
+
+
+
+
+
+</body>
+</html>
